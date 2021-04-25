@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (LVTTL|SSTL3_I|LVCMOS33|LVCMOS25|SSTL2_I|LVCMOS18|LVCMOS15|HSTL_I|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xbr" device="XC2C256" pkg="TQ144" spg="-7"/><pin dir="input" iostd="LVCMOS33" nm="chedo" no="75"/><pin dir="input" iostd="LVCMOS33" nm="clk" no="38"/><pin dir="input" iostd="LVCMOS33" nm="den" no="76"/><pin dir="output" iostd="LVCMOS33" nm="CS1&lt;0&gt;" no="104" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="CS1&lt;1&gt;" no="103" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="CS2&lt;0&gt;" no="78" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="CS2&lt;1&gt;" no="77" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="D1" no="100" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="D2" no="79" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg1&lt;0&gt;" no="5" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg1&lt;1&gt;" no="4" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg1&lt;2&gt;" no="3" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg1&lt;3&gt;" no="2" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg1&lt;4&gt;" no="143" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg1&lt;5&gt;" no="142" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg1&lt;6&gt;" no="140" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg1&lt;7&gt;" no="139" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg2&lt;0&gt;" no="43" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg2&lt;1&gt;" no="42" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg2&lt;2&gt;" no="41" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg2&lt;3&gt;" no="40" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg2&lt;4&gt;" no="39" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg2&lt;5&gt;" no="35" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg2&lt;6&gt;" no="34" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="Seg2&lt;7&gt;" no="33" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="V1" no="98" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="V2" no="80" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="X1" no="97" sr="fast"/><pin dir="output" iostd="LVCMOS33" nm="X2" no="81" sr="fast"/></ibis>

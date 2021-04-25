@@ -1,0 +1,5 @@
+set -tmpdir "D:/HK2 2021/FPGA/DengiaothongV2/xst/projnav.tmp"
+set -xsthdpdir "D:/HK2 2021/FPGA/DengiaothongV2/xst"
+elaborate
+-ifn CLK.prj
+-ifmt mixed

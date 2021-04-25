@@ -1,0 +1,369 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "CLK.v" in library work
+Compiling verilog file "main.v" in library work
+Module <CLK> compiled
+Module <main> compiled
+No errors in compilation
+Analysis of file <"main.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <main> in library <work> with parameters.
+	timedo = "00000000000000000000000000011001"
+	timevang = "00000000000000000000000000000010"
+	timexanh = "00000000000000000000000000010110"
+
+Analyzing hierarchy for module <CLK> in library <work> with parameters.
+	freq = "00000000000000001100001101010000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <main>.
+	timedo = 32'sb00000000000000000000000000011001
+	timevang = 32'sb00000000000000000000000000000010
+	timexanh = 32'sb00000000000000000000000000010110
+WARNING:Xst:1643 - "main.v" line 72: You are giving the signal times1 a default value. times1 already had a default value, which will be overridden by this one.
+WARNING:Xst:1643 - "main.v" line 76: You are giving the signal times2 a default value. times2 already had a default value, which will be overridden by this one.
+Module <main> is correct for synthesis.
+ 
+Analyzing module <CLK> in library <work>.
+	freq = 32'sb00000000000000001100001101010000
+Module <CLK> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CLK>.
+    Related source file is "CLK.v".
+    Found 1-bit register for signal <clk1hz>.
+    Found 20-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <CLK> synthesized.
+
+
+Synthesizing Unit <main>.
+    Related source file is "main.v".
+WARNING:Xst:646 - Signal <DV2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <DV1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <CS2> equivalent to <CS1> has been removed
+    Found finite state machine <FSM_0> for signal <flaglight>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk1hz                    (rising_edge)        |
+    | Reset              | chedo                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 2-bit register for signal <CS1>.
+    Found 1-bit register for signal <D1>.
+    Found 1-bit register for signal <D2>.
+    Found 8-bit register for signal <Seg1>.
+    Found 8-bit register for signal <Seg2>.
+    Found 1-bit register for signal <V1>.
+    Found 1-bit register for signal <V2>.
+    Found 1-bit register for signal <X1>.
+    Found 1-bit register for signal <X2>.
+    Found 4-bit register for signal <CH1>.
+    Found 4-bit register for signal <CH2>.
+    Found 5-bit comparator less for signal <D1$cmp_lt0000> created at line 206.
+    Found 1-bit register for signal <flag>.
+    Found 5-bit comparator less for signal <old_CH1_3$cmp_lt0000> created at line 287.
+    Found 5-bit comparator less for signal <old_CH1_3$cmp_lt0001> created at line 289.
+    Found 5-bit comparator less for signal <old_CH2_4$cmp_lt0000> created at line 293.
+    Found 5-bit comparator less for signal <old_CH2_4$cmp_lt0001> created at line 295.
+    Found 4-bit subtractor for signal <old_DV1_5$addsub0000>.
+    Found 4-bit subtractor for signal <old_DV2_6$addsub0000>.
+    Found 5-bit adder for signal <old_tmp_1$add0000> created at line 205.
+    Found 5-bit register for signal <times1>.
+    Found 5-bit subtractor for signal <times1$share0000>.
+    Found 5-bit register for signal <times2>.
+    Found 5-bit subtractor for signal <times2$share0000>.
+    Found 5-bit up counter for signal <tmp>.
+    Found 5-bit comparator greatequal for signal <tmp$cmp_ge0000> created at line 206.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <main> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 4-bit subtractor                                      : 2
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 2
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 15
+ 1-bit register                                        : 8
+ 2-bit register                                        : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 2
+ 8-bit register                                        : 2
+# Comparators                                          : 6
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator less                                 : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <flaglight/FSM> on signal <flaglight[1:3]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 001
+ 01    | 010
+ 10    | 100
+-------------------
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 5
+ 4-bit subtractor                                      : 2
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 2
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <CH2_2> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CH2_3> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CH1_2> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CH1_3> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <main> ...
+  implementation constraint: INIT=r	 : D1
+  implementation constraint: INIT=r	 : V1
+  implementation constraint: INIT=s	 : X1
+  implementation constraint: INIT=r	 : times1_0
+  implementation constraint: INIT=s	 : D2
+  implementation constraint: INIT=r	 : V2
+  implementation constraint: INIT=r	 : X2
+  implementation constraint: INIT=s	 : times2_0
+  implementation constraint: INIT=r	 : flag
+  implementation constraint: INIT=s	 : flaglight_FSM_FFd3
+  implementation constraint: INIT=r	 : tmp_3
+  implementation constraint: INIT=r	 : tmp_2
+  implementation constraint: INIT=r	 : CH2_0
+  implementation constraint: INIT=r	 : CH2_1
+  implementation constraint: INIT=r	 : tmp_4
+  implementation constraint: INIT=r	 : CH1_0
+  implementation constraint: INIT=r	 : CH1_1
+  implementation constraint: INIT=r	 : times2_1
+  implementation constraint: INIT=s	 : times2_4
+  implementation constraint: INIT=s	 : times2_3
+  implementation constraint: INIT=r	 : times2_2
+  implementation constraint: INIT=s	 : times1_1
+  implementation constraint: INIT=s	 : times1_4
+  implementation constraint: INIT=r	 : times1_3
+  implementation constraint: INIT=s	 : times1_2
+  implementation constraint: INIT=r	 : flaglight_FSM_FFd1
+  implementation constraint: INIT=r	 : tmp_0
+  implementation constraint: INIT=r	 : tmp_1
+  implementation constraint: INIT=r	 : flaglight_FSM_FFd2
+WARNING:Xst:1293 - FF/Latch <tmp_4> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tmp_3> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tmp_2> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tmp_1> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <CLK> ...
+  implementation constraint: INIT=r	 : clk1hz
+  implementation constraint: INIT=r	 : counter_19
+  implementation constraint: INIT=r	 : counter_18
+  implementation constraint: INIT=r	 : counter_0
+  implementation constraint: INIT=r	 : counter_1
+  implementation constraint: INIT=r	 : counter_2
+  implementation constraint: INIT=r	 : counter_3
+  implementation constraint: INIT=r	 : counter_4
+  implementation constraint: INIT=r	 : counter_5
+  implementation constraint: INIT=r	 : counter_6
+  implementation constraint: INIT=r	 : counter_7
+  implementation constraint: INIT=r	 : counter_8
+  implementation constraint: INIT=r	 : counter_9
+  implementation constraint: INIT=r	 : counter_10
+  implementation constraint: INIT=r	 : counter_11
+  implementation constraint: INIT=r	 : counter_12
+  implementation constraint: INIT=r	 : counter_13
+  implementation constraint: INIT=r	 : counter_14
+  implementation constraint: INIT=r	 : counter_15
+  implementation constraint: INIT=r	 : counter_16
+  implementation constraint: INIT=r	 : counter_17
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : main.ngr
+Top Level Output File Name         : main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 29
+
+Cell Usage :
+# BELS                             : 718
+#      AND2                        : 217
+#      AND3                        : 28
+#      AND4                        : 6
+#      AND5                        : 2
+#      AND8                        : 1
+#      GND                         : 2
+#      INV                         : 298
+#      OR2                         : 109
+#      OR3                         : 14
+#      XOR2                        : 41
+# FlipFlops/Latches                : 64
+#      FD                          : 58
+#      FDCE                        : 6
+# IO Buffers                       : 29
+#      IBUF                        : 3
+#      OBUF                        : 26
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.03 secs
+ 
+--> 
+
+Total memory usage is 4513204 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
