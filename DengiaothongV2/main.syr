@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: main.prj
 
@@ -88,7 +88,7 @@ Analysis of file <"main.prj"> succeeded.
 =========================================================================
 Analyzing hierarchy for module <main> in library <work> with parameters.
 	timedo = "00000000000000000000000000011001"
-	timevang = "00000000000000000000000000000010"
+	timevang = "00000000000000000000000000000011"
 	timexanh = "00000000000000000000000000010110"
 
 Analyzing hierarchy for module <CLK> in library <work> with parameters.
@@ -100,7 +100,7 @@ Analyzing hierarchy for module <CLK> in library <work> with parameters.
 =========================================================================
 Analyzing top module <main>.
 	timedo = 32'sb00000000000000000000000000011001
-	timevang = 32'sb00000000000000000000000000000010
+	timevang = 32'sb00000000000000000000000000000011
 	timexanh = 32'sb00000000000000000000000000010110
 WARNING:Xst:1643 - "main.v" line 72: You are giving the signal times1 a default value. times1 already had a default value, which will be overridden by this one.
 WARNING:Xst:1643 - "main.v" line 76: You are giving the signal times2 a default value. times2 already had a default value, which will be overridden by this one.
@@ -258,12 +258,11 @@ Optimizing unit <main> ...
   implementation constraint: INIT=r	 : X2
   implementation constraint: INIT=s	 : times2_0
   implementation constraint: INIT=r	 : flag
-  implementation constraint: INIT=s	 : flaglight_FSM_FFd3
+  implementation constraint: INIT=r	 : tmp_4
   implementation constraint: INIT=r	 : tmp_3
   implementation constraint: INIT=r	 : tmp_2
   implementation constraint: INIT=r	 : CH2_0
   implementation constraint: INIT=r	 : CH2_1
-  implementation constraint: INIT=r	 : tmp_4
   implementation constraint: INIT=r	 : CH1_0
   implementation constraint: INIT=r	 : CH1_1
   implementation constraint: INIT=r	 : times2_1
@@ -274,14 +273,14 @@ Optimizing unit <main> ...
   implementation constraint: INIT=s	 : times1_4
   implementation constraint: INIT=r	 : times1_3
   implementation constraint: INIT=s	 : times1_2
-  implementation constraint: INIT=r	 : flaglight_FSM_FFd1
+  implementation constraint: INIT=r	 : flaglight_FSM_FFd2
   implementation constraint: INIT=r	 : tmp_0
   implementation constraint: INIT=r	 : tmp_1
-  implementation constraint: INIT=r	 : flaglight_FSM_FFd2
+  implementation constraint: INIT=s	 : flaglight_FSM_FFd3
+  implementation constraint: INIT=r	 : flaglight_FSM_FFd1
 WARNING:Xst:1293 - FF/Latch <tmp_4> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <tmp_3> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <tmp_2> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tmp_1> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <CLK> ...
   implementation constraint: INIT=r	 : clk1hz
@@ -336,19 +335,19 @@ Design Statistics
 # IOs                              : 29
 
 Cell Usage :
-# BELS                             : 718
-#      AND2                        : 217
+# BELS                             : 740
+#      AND2                        : 223
 #      AND3                        : 28
-#      AND4                        : 6
-#      AND5                        : 2
+#      AND4                        : 5
+#      AND5                        : 4
 #      AND8                        : 1
 #      GND                         : 2
-#      INV                         : 298
-#      OR2                         : 109
+#      INV                         : 306
+#      OR2                         : 115
 #      OR3                         : 14
-#      XOR2                        : 41
-# FlipFlops/Latches                : 64
-#      FD                          : 58
+#      XOR2                        : 42
+# FlipFlops/Latches                : 65
+#      FD                          : 59
 #      FDCE                        : 6
 # IO Buffers                       : 29
 #      IBUF                        : 3
@@ -356,14 +355,14 @@ Cell Usage :
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.03 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.36 secs
  
 --> 
 
-Total memory usage is 4513204 kilobytes
+Total memory usage is 4513220 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   16 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

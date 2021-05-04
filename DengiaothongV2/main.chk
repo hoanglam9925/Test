@@ -6,42 +6,42 @@
 
 GCLK2: 4=clk.p
 ----------------- B l o c k 0 ------------------
-PLApt(56/56), Fanin(24/38), Clk(1/3), Bct(1/4), Pin(4/6), Mcell(13/16)
-PLApts[56/56] 97 153 172 185 7 186 188 41 44 45 103 154 180 110 187 152 170 181 182 183 184 39 40 104 155 43 46 59 105 115 8 91 98 116 9 89 90 99 29 31 113 30 102 179 1 15 36 42 109 14 35 107 108 134 139 141
-Fanins[24] Seg1<4>.n Seg1<5>.n Seg1<6>.n Seg1<7>.n V1.n X1.n CH1<0>.n CH1<1>.n N_PZ_278.n N_PZ_350.n N_PZ_395.n N_PZ_396.n N_PZ_404.n N_PZ_419.n clk1hz.n flag.n flaglight_FSM_FFd1.n flaglight_FSM_FFd2.n times1<0>.n times1<1>.n times1<2>.n times1<3>.n times1<4>.n chedo.p
+PLApt(56/56), Fanin(23/38), Clk(1/3), Bct(1/4), Pin(4/6), Mcell(12/16)
+PLApts[56/56] 136 186 206 214 9 216 217 220 187 208 218 219 222 46 52 53 142 188 215 221 44 45 143 189 51 54 70 145 162 10 130 137 163 11 128 129 138 32 35 160 34 141 213 17 24 43 144 151 42 50 149 150 14 48 152 153
+Fanins[23] Seg1<4>.n Seg1<5>.n Seg1<6>.n Seg1<7>.n V1.n X1.n CH1<0>.n CH1<1>.n N_PZ_282.n N_PZ_350.n N_PZ_396.n N_PZ_397.n N_PZ_407.n clk1hz.n flag.n flaglight_FSM_FFd1.n flaglight_FSM_FFd2.n times1<0>.n times1<1>.n times1<2>.n times1<3>.n times1<4>.n chedo.p
 clk[1] clk 
-CTC: (pt=7) clk1hz ;
+CTC: (pt=9) clk1hz ;
 CTR: 
 CTS: 
 CTE: 
 vref: [0]
-Signal[13] [Seg1<5>(148),Seg1<5>(142)] [Seg1<6>(150),Seg1<6>(140)] [Seg1<4>(147),Seg1<4>(143)]  
-           [Seg1<7>(156),Seg1<7>(139)] [N_PZ_350(160)] [CH1<0>(159)] [CH1<1>(155)] [N_PZ_278(154)]  
-           [N_PZ_404(153)] [times1<1>(152)] [times1<0>(151)] [times1<4>(149)] [N_PZ_419(146)] 
-Signal[13] [ 0:  ][ 1: N_PZ_419(146)  ][ 2: Seg1<4>(147) Seg1<4>(143)  ][ 3: Seg1<5>(148) Seg1<5>(142)  ] 
-           [ 4: times1<4>(149)  ][ 5: Seg1<6>(150) Seg1<6>(140)  ][ 6: times1<0>(151)  ][ 7: times1<1>(152)  
-            ][ 8: N_PZ_404(153)  ][ 9: N_PZ_278(154)  ][ 10: CH1<1>(155)  ][ 11: Seg1<7>(156) Seg1<7>(139)  ] 
+Signal[12] [Seg1<4>(147),Seg1<4>(143)] [Seg1<5>(148),Seg1<5>(142)] [Seg1<6>(150),Seg1<6>(140)]  
+           [Seg1<7>(156),Seg1<7>(139)] [N_PZ_350(160)] [CH1<0>(159)] [CH1<1>(155)] [N_PZ_282(154)]  
+           [N_PZ_407(153)] [times1<2>(152)] [times1<1>(151)] [times1<0>(149)] 
+Signal[12] [ 0:  ][ 1:  ][ 2: Seg1<4>(147) Seg1<4>(143)  ][ 3: Seg1<5>(148) Seg1<5>(142)  ][ 4:  
+           times1<0>(149)  ][ 5: Seg1<6>(150) Seg1<6>(140)  ][ 6: times1<1>(151)  ][ 7: times1<2>(152)  ] 
+           [ 8: N_PZ_407(153)  ][ 9: N_PZ_282(154)  ][ 10: CH1<1>(155)  ][ 11: Seg1<7>(156) Seg1<7>(139)  ] 
            [ 12: (138)  ][ 13: (137)  ][ 14: CH1<0>(159)  ][ 15: N_PZ_350(160)  ]
 ----------------- B l o c k 1 ------------------
-PLApt(56/56), Fanin(33/38), Clk(1/3), Bct(1/4), Pin(4/8), Mcell(11/16)
-PLApts[56/56] 85 158 159 160 7 164 165 166 168 174 177 178 92 112 157 161 162 163 167 169 171 86 156 111 173 175 176 13 25 37 132 140 12 38 106 114 133 18 21 24 1 15 47 123 124 14 48 54 122 50 121 129 142 144 149 151
-Fanins[33] Seg1<0>.n Seg1<1>.n Seg1<2>.n Seg1<3>.n V1.n V2.n X1.n X2.n CH1<0>.n CH1<1>.n N_PZ_350.n N_PZ_395.n N_PZ_396.n N_PZ_397.n N_PZ_404.n N_PZ_419.n N_PZ_420.n clk1hz.n flag.n flaglight_FSM_FFd1.n flaglight_FSM_FFd2.n old_tmp_1_add0000<1>.n times1<0>.n times1<1>.n times1<2>.n times1<3>.n times1<4>.n times2<0>.n times2<1>.n times2<3>.n times2<4>.n chedo.p den.p
+PLApt(56/56), Fanin(32/38), Clk(1/3), Bct(1/4), Pin(4/8), Mcell(11/16)
+PLApts[56/56] 124 192 193 195 9 198 199 200 201 203 204 210 131 157 191 194 196 197 202 205 207 125 190 156 209 211 212 1 71 72 146 161 28 30 106 33 147 113 260 116 119 109 112 17 60 171 172 39 262 263 267 268 76 77 169 183
+Fanins[32] Seg1<0>.n Seg1<1>.n Seg1<2>.n Seg1<3>.n V1.n V2.n X1.n X2.n CH1<0>.n CH1<1>.n N_PZ_350.n N_PZ_396.n N_PZ_397.n N_PZ_398.n N_PZ_407.n N_PZ_493.n clk1hz.n flag.n flaglight_FSM_FFd1.n flaglight_FSM_FFd2.n times1<0>.n times1<1>.n times1<2>.n times1<3>.n times1<4>.n times2<0>.n times2<3>.n times2<4>.n tmp<0>.n tmp<1>.n chedo.p den.p
 clk[1] clk 
-CTC: (pt=7) clk1hz ;
+CTC: (pt=9) clk1hz ;
 CTR: 
 CTS: 
 CTE: 
 vref: [0]
 Signal[11] [Seg1<2>(163),Seg1<2>(3)] [Seg1<1>(164),Seg1<1>(4)] [Seg1<3>(161),Seg1<3>(2)]  
-           [Seg1<0>(165),Seg1<0>(5)] [times1<2>(176)] [times1<3>(171)] [old_tmp_1_add0000<1>(170)]  
-           [times2<0>(169)] [times2<1>(168)] [times2<3>(167)] [times2<4>(166)] 
+           [Seg1<0>(165),Seg1<0>(5)] [times1<4>(176)] [times1<3>(171)] [tmp<0>(170)] [tmp<1>(169)]  
+           [times2<0>(168)] [times2<3>(167)] [times2<4>(166)] 
 Signal[11] [ 0: Seg1<3>(161) Seg1<3>(2)  ][ 1:  ][ 2: Seg1<2>(163) Seg1<2>(3)  ][ 3: Seg1<1>(164) Seg1<1>(4)  
-            ][ 4: Seg1<0>(165) Seg1<0>(5)  ][ 5: times2<4>(166)  ][ 6: times2<3>(167)  ][ 7: times2<1>(168)  
-            ][ 8: times2<0>(169)  ][ 9: old_tmp_1_add0000<1>(170)  ][ 10: times1<3>(171)  ][ 11: (6)  ][ 12:  
-           (7)  ][ 13: (9)  ][ 14: (10)  ][ 15: times1<2>(176)  ]
+            ][ 4: Seg1<0>(165) Seg1<0>(5)  ][ 5: times2<4>(166)  ][ 6: times2<3>(167)  ][ 7: times2<0>(168)  
+            ][ 8: tmp<1>(169)  ][ 9: tmp<0>(170)  ][ 10: times1<3>(171)  ][ 11: (6)  ][ 12: (7)  ][ 13: (9)  
+            ][ 14: (10)  ][ 15: times1<4>(176)  ]
 ----------------- B l o c k 2 ------------------
 PLApt(16/56), Fanin(20/38), Clk(1/3), Bct(0/4), Pin(0/6), Mcell(16/16)
-PLApts[16/56] 74 75 64 66 68 69 () () () () 70 () () 71 () () 72 () () 78 () () 73 () () 79 () () () () () () () () () () () () () () () () () 81 () () 81 () () 76 () () () () () 77
+PLApts[16/56] 91 92 81 83 85 86 () () () () 87 () () 88 () () 89 () () 95 () () 90 () () 96 () () () () () () () () () () () () () () () () () 120 () () 120 () () 93 () () () () () 94
 Fanins[20] U1/counter<0>.n U1/counter<10>.n U1/counter<11>.n U1/counter<12>.n U1/counter<13>.n U1/counter<14>.n U1/counter<15>.n U1/counter<16>.n U1/counter<17>.n U1/counter<18>.n U1/counter<19>.n U1/counter<1>.n U1/counter<2>.n U1/counter<3>.n U1/counter<4>.n U1/counter<5>.n U1/counter<6>.n U1/counter<7>.n U1/counter<8>.n U1/counter<9>.n
 clk[1] clk 
 CTC: 
@@ -59,50 +59,50 @@ Signal[16] [ 0: U1/counter<10>(177) (136)  ][ 1: U1/counter<11>(178) (135)  ][ 2
             ][ 10: U1/counter<15>(187)  ][ 11: clk1hz(188)  ][ 12: U1/counter<0>(189)  ][ 13:  
            U1/counter<16>(190) (132)  ][ 14: U1/counter<14>(191)  ][ 15: U1/counter<17>(192) (131)  ]
 ----------------- B l o c k 3 ------------------
-PLApt(35/56), Fanin(25/38), Clk(1/3), Bct(1/4), Pin(0/8), Mcell(16/16)
-PLApts[35/50] 12 27 49 143 7 150 55 58 60 120 65 130 10 63 95 100 62 131 11 61 93 94 80 101 32 3 34 128 28 33 117 125 216 () () () () () () () () () () 2 () () () () () 82
-Fanins[25] V2.n X2.n CH2<0>.n CH2<1>.n N_PZ_279.n N_PZ_395.n N_PZ_397.n N_PZ_420.n U1/counter<0>.n U1/counter<1>.n U1/counter<2>.n U1/counter<3>.n U1/counter<4>.n clk1hz.n flag.n flaglight_FSM_FFd1.n flaglight_FSM_FFd2.n flaglight_FSM_FFd3.n times2<0>.n times2<1>.n times2<2>.n times2<3>.n times2<4>.n chedo.p den.p
+PLApt(38/56), Fanin(22/38), Clk(1/3), Bct(1/4), Pin(0/8), Mcell(16/16)
+PLApts[38/50] 14 26 56 167 9 176 55 63 174 175 80 64 67 79 75 168 78 184 12 97 134 139 3 185 13 2 132 133 23 140 38 41 182 40 164 250 () () () () () () () 121 () () () () () 27
+Fanins[22] V2.n X2.n CH2<0>.n CH2<1>.n N_PZ_283.n N_PZ_396.n N_PZ_398.n U1/counter<0>.n U1/counter<1>.n U1/counter<2>.n clk1hz.n flag.n flaglight_FSM_FFd1.n flaglight_FSM_FFd2.n flaglight_FSM_FFd3.n times2<0>.n times2<1>.n times2<2>.n times2<3>.n times2<4>.n chedo.p den.p
 clk[1] clk 
-CTC: (pt=7) clk1hz ;
+CTC: (pt=9) clk1hz ;
 CTR: 
 CTS: 
 CTE: 
 vref: [0]
-Signal[16] [times2<2>(208)] [N_PZ_351(207)] [CH2<0>(205)] [CH2<1>(203)] [N_PZ_279(202)] [N_PZ_405(201)]  
-           [N_PZ_420(200)] [N_PZ_397(199)] [flag(206)] [flaglight_FSM_FFd1(204)] [flaglight_FSM_FFd2(198)]  
-           [N_PZ_395(197)] [U1/counter<1>(196)] [U1/counter<2>(195)] [U1/counter<3>(194)]  
-           [U1/counter<5>(193)] 
-Signal[16] [ 0: U1/counter<5>(193) (11)  ][ 1: U1/counter<3>(194) (12)  ][ 2: U1/counter<2>(195) (13)  ][ 3:  
-           U1/counter<1>(196) (14)  ][ 4: N_PZ_395(197) (15)  ][ 5: flaglight_FSM_FFd2(198) (16)  ][ 6:  
-           N_PZ_397(199)  ][ 7: N_PZ_420(200)  ][ 8: N_PZ_405(201)  ][ 9: N_PZ_279(202)  ][ 10: CH2<1>(203)  
-            ][ 11: flaglight_FSM_FFd1(204) (17)  ][ 12: CH2<0>(205)  ][ 13: flag(206) (18)  ][ 14:  
-           N_PZ_351(207)  ][ 15: times2<2>(208)  ]
+Signal[16] [times2<2>(208)] [times2<1>(207)] [N_PZ_351(205)] [CH2<0>(203)] [CH2<1>(202)] [N_PZ_283(201)]  
+           [N_PZ_408(200)] [N_PZ_493(199)] [N_PZ_398(206)] [flag(204)] [flaglight_FSM_FFd1(198)]  
+           [flaglight_FSM_FFd2(197)] [N_PZ_396(196)] [U1/counter<1>(195)] [U1/counter<2>(194)]  
+           [U1/counter<3>(193)] 
+Signal[16] [ 0: U1/counter<3>(193) (11)  ][ 1: U1/counter<2>(194) (12)  ][ 2: U1/counter<1>(195) (13)  ][ 3:  
+           N_PZ_396(196) (14)  ][ 4: flaglight_FSM_FFd2(197) (15)  ][ 5: flaglight_FSM_FFd1(198) (16)  ][ 6:  
+           N_PZ_493(199)  ][ 7: N_PZ_408(200)  ][ 8: N_PZ_283(201)  ][ 9: CH2<1>(202)  ][ 10: CH2<0>(203)  ] 
+           [ 11: flag(204) (17)  ][ 12: N_PZ_351(205)  ][ 13: N_PZ_398(206) (18)  ][ 14: times2<1>(207)  ] 
+           [ 15: times2<2>(208)  ]
 ----------------- B l o c k 4 ------------------
-PLApt(8/56), Fanin(21/38), Clk(1/3), Bct(0/4), Pin(1/5), Mcell(3/16)
-PLApts[8/56] 51 52 97 119 192 207 () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 26 () () 67
-Fanins[21] Seg2<7>.n CH2<0>.n CH2<1>.n N_PZ_351.n N_PZ_395.n N_PZ_397.n N_PZ_405.n U1/counter<0>.n U1/counter<1>.n U1/counter<2>.n U1/counter<3>.n U1/counter<4>.n U1/counter<5>.n U1/counter<6>.n flag.n times1<1>.n times1<2>.n times2<0>.n times2<1>.n times2<2>.n times2<3>.n
+PLApt(9/56), Fanin(21/38), Clk(1/3), Bct(0/4), Pin(1/5), Mcell(4/16)
+PLApts[9/56] 57 58 136 166 226 243 () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 25 () () () () () 84 () () 82
+Fanins[21] Seg2<7>.n CH2<0>.n CH2<1>.n N_PZ_351.n N_PZ_396.n N_PZ_398.n N_PZ_408.n U1/counter<0>.n U1/counter<1>.n U1/counter<2>.n U1/counter<3>.n U1/counter<4>.n U1/counter<5>.n U1/counter<6>.n flag.n times1<1>.n times1<2>.n times2<0>.n times2<1>.n times2<2>.n times2<3>.n
 clk[1] clk 
 CTC: 
 CTR: 
 CTS: 
 CTE: 
 vref: [0]
-Signal[ 3] [Seg2<7>(210),Seg2<7>(33)] [U1/counter<7>(224)] [N_PZ_396(223)] 
-Signal[ 3] [ 0:  ][ 1: Seg2<7>(210) Seg2<7>(33)  ][ 2:  ][ 3: (32)  ][ 4: (31)  ][ 5: (30)  ][ 6:  ][ 7:  ] 
-           [ 8:  ][ 9:  ][ 10:  ][ 11:  ][ 12:  ][ 13: (28)  ][ 14: N_PZ_396(223)  ][ 15: U1/counter<7>(224)  
-            ]
+Signal[ 4] [Seg2<7>(210),Seg2<7>(33)] [U1/counter<5>(224)] [U1/counter<7>(223)] [N_PZ_397(221)] 
+Signal[ 4] [ 0:  ][ 1: Seg2<7>(210) Seg2<7>(33)  ][ 2:  ][ 3: (32)  ][ 4: (31)  ][ 5: (30)  ][ 6:  ][ 7:  ] 
+           [ 8:  ][ 9:  ][ 10:  ][ 11:  ][ 12: N_PZ_397(221)  ][ 13: (28)  ][ 14: U1/counter<7>(223)  ][ 15:  
+           U1/counter<5>(224)  ]
 ----------------- B l o c k 5 ------------------
 PLApt(45/56), Fanin(20/38), Clk(1/3), Bct(0/4), Pin(8/8), Mcell(7/16)
-PLApts[45/56] 87 195 196 197 201 202 203 205 211 214 215 96 127 194 198 199 200 204 206 208 97 190 209 222 223 225 53 56 57 118 191 217 224 189 207 218 219 220 221 88 126 210 212 213 () () () () () () () () () () () 193
-Fanins[20] Seg2<0>.n Seg2<1>.n Seg2<2>.n Seg2<3>.n Seg2<4>.n Seg2<5>.n Seg2<6>.n CH2<0>.n CH2<1>.n N_PZ_279.n N_PZ_351.n N_PZ_395.n N_PZ_397.n N_PZ_405.n flag.n times2<0>.n times2<1>.n times2<2>.n times2<3>.n times2<4>.n
+PLApts[45/56] 126 229 230 232 235 236 237 238 240 241 247 135 179 228 231 233 234 239 242 244 136 223 243 251 253 254 257 224 245 255 256 259 59 65 66 165 225 252 258 127 178 246 248 249 () () () () () () () () () () () 227
+Fanins[20] Seg2<0>.n Seg2<1>.n Seg2<2>.n Seg2<3>.n Seg2<4>.n Seg2<5>.n Seg2<6>.n CH2<0>.n CH2<1>.n N_PZ_283.n N_PZ_351.n N_PZ_396.n N_PZ_398.n N_PZ_408.n flag.n times2<0>.n times2<1>.n times2<2>.n times2<3>.n times2<4>.n
 clk[1] clk 
 CTC: 
 CTR: 
 CTS: 
 CTE: 
 vref: [0]
-Signal[ 8] [Seg2<2>(238),Seg2<2>(41)] [Seg2<1>(239),Seg2<1>(42)] [Seg2<5>(226),Seg2<5>(35)]  
-           [Seg2<6>(225),Seg2<6>(34)] [Seg2<4>(236),Seg2<4>(39)] [Seg2<3>(237),Seg2<3>(40)]  
+Signal[ 8] [Seg2<2>(238),Seg2<2>(41)] [Seg2<1>(239),Seg2<1>(42)] [Seg2<4>(236),Seg2<4>(39)]  
+           [Seg2<5>(226),Seg2<5>(35)] [Seg2<6>(225),Seg2<6>(34)] [Seg2<3>(237),Seg2<3>(40)]  
            [Seg2<0>(240),Seg2<0>(43)] [clk(38)] 
 Signal[ 8] [ 0: Seg2<6>(225) Seg2<6>(34)  ][ 1: Seg2<5>(226) Seg2<5>(35)  ][ 2:  ][ 3: clk(38)  ][ 4:  ][ 5:  
             ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: Seg2<4>(236) Seg2<4>(39)  ][ 12: Seg2<3>(237)  
@@ -113,8 +113,8 @@ Signal[ 8] [ 0: Seg2<6>(225) Seg2<6>(34)  ][ 1: Seg2<5>(226) Seg2<5>(35)  ][ 2: 
 ----------------- B l o c k 8 ------------------
 ----------------- B l o c k 9 ------------------
 PLApt(2/56), Fanin(2/38), Clk(1/3), Bct(0/4), Pin(2/9), Mcell(2/16)
-PLApts[2/44] () () () () () () () () () () () () () () () () () () () () () () () () () 84 () () () () () () () () () () () () () () () () () 83
-Fanins[ 2] N_PZ_395.n flag.n
+PLApts[2/44] () () () () () () () () () () () () () () () () () () () () () () () () () 123 () () () () () () () () () () () () () () () () () 122
+Fanins[ 2] N_PZ_396.n flag.n
 clk[1] clk 
 CTC: 
 CTR: 
@@ -127,11 +127,11 @@ Signal[ 2] [ 0: (111)  ][ 1: (110)  ][ 2: (107)  ][ 3: (106)  ][ 4: (105)  ][ 5:
            [ 15: (101)  ]
 ----------------- B l o c k 10 ------------------
 ----------------- B l o c k 11 ------------------
-PLApt(17/56), Fanin(12/38), Clk(0/3), Bct(1/4), Pin(3/6), Mcell(3/16)
-PLApts[17/17] 5 12 16 22 7 23 133 137 6 13 17 132 136 19 20 135 138
-Fanins[12] D1.n V1.n V2.n X1.n X2.n N_PZ_419.n clk1hz.n flaglight_FSM_FFd1.n flaglight_FSM_FFd2.n old_tmp_1_add0000<1>.n chedo.p den.p
+PLApt(24/56), Fanin(16/38), Clk(0/3), Bct(1/4), Pin(3/6), Mcell(3/16)
+PLApts[24/44] 6 14 31 49 9 69 98 103 104 154 159 8 18 19 99 151 155 5 102 148 261 265 269 () () () () () () () () () () () () () () () () () () () () 16
+Fanins[16] D1.n V1.n V2.n X1.n X2.n N_PZ_397.n N_PZ_493.n clk1hz.n flaglight_FSM_FFd1.n flaglight_FSM_FFd2.n times1<0>.n times1<3>.n times1<4>.n tmp<1>.n chedo.p den.p
 clk[0] 
-CTC: (pt=7) clk1hz ;
+CTC: (pt=9) clk1hz ;
 CTR: 
 CTS: 
 CTE: 
@@ -140,11 +140,11 @@ Signal[ 3] [D1(322),D1(100)] [X1(332),X1(97)] [V1(331),V1(98)]
 Signal[ 3] [ 0:  ][ 1: D1(322) D1(100)  ][ 2:  ][ 3:  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  
            V1(331) V1(98)  ][ 11: X1(332) X1(97)  ][ 12: (96)  ][ 13: (95)  ][ 14: (94)  ][ 15:  ]
 ----------------- B l o c k 12 ------------------
-PLApt(19/56), Fanin(14/38), Clk(1/3), Bct(1/4), Pin(7/8), Mcell(6/16)
-PLApts[19/23] 6 13 17 19 7 20 142 146 5 12 16 143 147 22 23 145 83 148 () () () () 84
-Fanins[14] D2.n V1.n V2.n X1.n X2.n N_PZ_395.n N_PZ_420.n clk1hz.n flag.n flaglight_FSM_FFd1.n flaglight_FSM_FFd2.n old_tmp_1_add0000<1>.n chedo.p den.p
+PLApt(26/56), Fanin(18/38), Clk(1/3), Bct(1/4), Pin(7/8), Mcell(6/16)
+PLApts[26/47] 8 17 36 61 9 73 99 100 101 173 180 6 15 19 98 176 122 177 7 105 170 264 123 266 270 () () () () () () () () () () () () () () () () () () () () () 21
+Fanins[18] D2.n V1.n V2.n X1.n X2.n N_PZ_396.n N_PZ_398.n N_PZ_493.n clk1hz.n flag.n flaglight_FSM_FFd1.n flaglight_FSM_FFd2.n times2<0>.n times2<3>.n times2<4>.n tmp<1>.n chedo.p den.p
 clk[1] clk 
-CTC: (pt=7) clk1hz ;
+CTC: (pt=9) clk1hz ;
 CTR: 
 CTS: 
 CTE: 

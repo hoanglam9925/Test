@@ -46,7 +46,7 @@ neu times == 0 la an so
 */
 	//Thoi gian cac den tinh luon ca 0
 	//Chon thoi gian duoi 29 giay
-	parameter timevang = 2; 
+	parameter timevang = 3; 
 	parameter timexanh = 22;
 	parameter timedo = 25; 
 	//Quet 7 doan
@@ -114,7 +114,7 @@ begin
 			if(X1 == 1)
 			begin
 				//Line 1 dang chay nhung het thoi gian den xanh thi chuyen vang roi moi chuyen do
-				if(times1 == 0)
+				if(times1 == 1)
 				begin
 					times1 = timevang;
 					X1 = 0;
@@ -127,7 +127,7 @@ begin
 			else if (V1 == 1)
 			begin
 				//Line 1 den vang het times thi doi sang den do
-				if(times1 == 0)
+				if(times1 == 1)
 				begin
 					times1 = timedo;
 					X1 = 0;
@@ -140,7 +140,7 @@ begin
 			else
 			begin
 				//Line 1 het times den do thi doi sang den xanh
-				if(times1 == 0)
+				if(times1 == 1)
 				begin
 					times1 = timexanh;
 					X1 = 1;
@@ -154,7 +154,7 @@ begin
 			if(X2 == 1)
 			begin
 				//Line 2 het times den xanh ==> doi sang den vang
-				if(times2 == 0)
+				if(times2 == 1)
 				begin
 					times2 = timevang;
 					X2 = 0;
@@ -167,7 +167,7 @@ begin
 			else if (V2 == 1)
 			begin
 				//Line 2 het times den vang ==> doi sang den do
-				if(times2 == 0)
+				if(times2 == 1)
 				begin
 					times2 = timedo;
 					X2 = 0;
@@ -180,7 +180,7 @@ begin
 			else
 			begin
 				//Line 2 het times den do ==> doi sang den xanh
-				if(times2 == 0)
+				if(times2 == 1)
 				begin
 					times2 = timexanh;
 					X2 = 1;

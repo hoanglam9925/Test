@@ -35,27 +35,28 @@ X2 S:PIN81
 ;The remaining section of the .gyd file is for documentation purposes only.
 ;It shows where your internal equations were placed in the last successful fit.
 
-PARTITION FB1_2 N_PZ_419 Seg1<4> Seg1<5> times1<4>
-		 Seg1<6> times1<0> times1<1> N_PZ_404
-		 N_PZ_278 CH1<1> Seg1<7>
+PARTITION FB1_3 Seg1<4> Seg1<5> times1<0> Seg1<6>
+		 times1<1> times1<2> N_PZ_407 N_PZ_282
+		 CH1<1> Seg1<7>
 PARTITION FB1_15 CH1<0> N_PZ_350
 PARTITION FB2_1 Seg1<3>
 PARTITION FB2_3 Seg1<2> Seg1<1> Seg1<0> times2<4>
-		 times2<3> times2<1> times2<0> old_tmp_1_add0000<1>
+		 times2<3> times2<0> tmp<1> tmp<0>
 		 times1<3>
-PARTITION FB2_16 times1<2>
+PARTITION FB2_16 times1<4>
 PARTITION FB3_1 U1/counter<10> U1/counter<11> U1/counter<12> U1/counter<18>
 		 U1/counter<13> U1/counter<19> U1/counter<9> U1/counter<8>
 		 U1/counter<6> U1/counter<4> U1/counter<15> clk1hz
 		 U1/counter<0> U1/counter<16> U1/counter<14> U1/counter<17>
 		
-PARTITION FB4_1 U1/counter<5> U1/counter<3> U1/counter<2> U1/counter<1>
-		 N_PZ_395 flaglight_FSM_FFd2 N_PZ_397 N_PZ_420
-		 N_PZ_405 N_PZ_279 CH2<1> flaglight_FSM_FFd1
-		 CH2<0> flag N_PZ_351 times2<2>
+PARTITION FB4_1 U1/counter<3> U1/counter<2> U1/counter<1> N_PZ_396
+		 flaglight_FSM_FFd2 flaglight_FSM_FFd1 N_PZ_493 N_PZ_408
+		 N_PZ_283 CH2<1> CH2<0> flag
+		 N_PZ_351 N_PZ_398 times2<1> times2<2>
 		
 PARTITION FB5_2 Seg2<7>
-PARTITION FB5_15 N_PZ_396 U1/counter<7>
+PARTITION FB5_13 N_PZ_397
+PARTITION FB5_15 U1/counter<7> U1/counter<5>
 PARTITION FB6_1 Seg2<6> Seg2<5>
 PARTITION FB6_12 Seg2<4> Seg2<3> Seg2<2> Seg2<1>
 		 Seg2<0>

@@ -7,78 +7,84 @@
 </td></tr><tr><td>
 FDCPE_CH10: FDCPE port map (CH1(0),CH1_D(0),clk,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CH1_D(0) <= ((flag AND CH1(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_395 AND CH1(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND times1(3) AND NOT times1(4) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_396)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND NOT times1(3) AND times1(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_396 AND CH1(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND times1(3) AND NOT times1(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_397)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND NOT times1(3) AND times1(4) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2)));
 </td></tr><tr><td>
 FDCPE_CH11: FDCPE port map (CH1(1),CH1_D(1),clk,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CH1_D(1) <= ((flag AND CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_395 AND CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND times1(3) AND times1(4))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND times1(4) AND times1(2)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_396 AND CH1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND times1(3) AND times1(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND times1(4) AND times1(2)));
 </td></tr><tr><td>
 FDCPE_CH20: FDCPE port map (CH2(0),CH2_D(0),clk,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CH2_D(0) <= ((flag AND CH2(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_395 AND CH2(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND times2(3) AND NOT times2(4) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_397)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND NOT times2(3) AND times2(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_396 AND CH2(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND times2(3) AND NOT times2(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_398)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND NOT times2(3) AND times2(4) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2)));
 </td></tr><tr><td>
 FDCPE_CH21: FDCPE port map (CH2(1),CH2_D(1),clk,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CH2_D(1) <= ((flag AND CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_395 AND CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND times2(3) AND times2(4))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND times2(4) AND times2(2)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_396 AND CH2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND times2(3) AND times2(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND times2(4) AND times2(2)));
 </td></tr><tr><td>
 FDCPE_CS10: FDCPE port map (CS1(0),CS1_D(0),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS1_D(0) <= NOT ((NOT flag AND N_PZ_395));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS1_D(0) <= NOT ((NOT flag AND N_PZ_396));
 </td></tr><tr><td>
 FDCPE_CS11: FDCPE port map (CS1(1),CS1_D(1),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS1_D(1) <= NOT ((flag AND N_PZ_395));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS1_D(1) <= NOT ((flag AND N_PZ_396));
 </td></tr><tr><td>
 FDCPE_CS20: FDCPE port map (CS2(0),CS2_D(0),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS2_D(0) <= NOT ((NOT flag AND N_PZ_395));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS2_D(0) <= NOT ((NOT flag AND N_PZ_396));
 </td></tr><tr><td>
 FDCPE_CS21: FDCPE port map (CS2(1),CS2_D(1),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS2_D(1) <= NOT ((flag AND N_PZ_395));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS2_D(1) <= NOT ((flag AND N_PZ_396));
 </td></tr><tr><td>
 FDCPE_D1: FDCPE port map (D1,D1_D,clk1hz,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D1_D <= ((chedo AND flaglight_FSM_FFd1)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND old_tmp_1_add0000(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND NOT N_PZ_419 AND D1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND tmp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND times1(3) AND D1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND times1(4) AND D1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND NOT times1(0) AND D1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND NOT N_PZ_397 AND D1)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND NOT X1 AND NOT V1)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND NOT old_tmp_1_add0000(1) AND X2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND NOT old_tmp_1_add0000(1) AND V2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X1 AND V1 AND NOT flaglight_FSM_FFd2 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_419));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND X2 AND NOT tmp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND NOT tmp(1) AND V2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X1 AND NOT flaglight_FSM_FFd2 AND V1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(3) AND NOT times1(4) AND times1(0) AND N_PZ_397));
 </td></tr><tr><td>
 FDCPE_D2: FDCPE port map (D2,D2_D,clk1hz,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D2_D <= ((chedo AND flaglight_FSM_FFd2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND old_tmp_1_add0000(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND NOT N_PZ_420 AND D2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND X1 AND NOT old_tmp_1_add0000(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND NOT old_tmp_1_add0000(1) AND V1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND tmp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND times2(3) AND D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND NOT times2(0) AND D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND times2(4) AND D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND NOT N_PZ_398 AND D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND X1 AND NOT tmp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND V1 AND NOT tmp(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND NOT X2 AND NOT V2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X2 AND V2 AND NOT flaglight_FSM_FFd1 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_420));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND NOT X2 AND V2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(3) AND times2(0) AND NOT times2(4) AND N_PZ_398));
 </td></tr><tr><td>
 </td></tr><tr><td>
-N_PZ_278 <= ((NOT times1(3) AND NOT times1(2) AND CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times1(3) AND NOT N_PZ_396 AND NOT CH1(0) AND NOT CH1(1))
+N_PZ_282 <= ((NOT times1(3) AND NOT times1(2) AND CH1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times1(3) AND NOT N_PZ_397 AND NOT CH1(0) AND NOT CH1(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times1(3) AND times1(1) AND times1(2) AND CH1(1)));
 </td></tr><tr><td>
 </td></tr><tr><td>
-N_PZ_279 <= ((NOT times2(3) AND NOT times2(2) AND CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times2(3) AND NOT N_PZ_397 AND NOT CH2(0) AND NOT CH2(1))
+N_PZ_283 <= ((NOT times2(3) AND NOT times2(2) AND CH2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times2(3) AND NOT N_PZ_398 AND NOT CH2(0) AND NOT CH2(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times2(3) AND times2(1) AND times2(2) AND CH2(1)));
 </td></tr><tr><td>
 </td></tr><tr><td>
-N_PZ_350 <= ((NOT flag AND times1(3) AND NOT times1(4) AND NOT N_PZ_396)
+N_PZ_350 <= ((NOT flag AND times1(3) AND NOT times1(4) AND NOT N_PZ_397)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND NOT times1(3) AND times1(4) AND NOT times1(2))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times1(3) AND NOT times1(0) AND N_PZ_396 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times1(3) AND NOT times1(0) AND N_PZ_397 AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH1(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times1(3) AND NOT times1(0) AND times1(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND CH1(0) AND NOT CH1(1))
@@ -86,9 +92,9 @@ N_PZ_350 <= ((NOT flag AND times1(3) AND NOT times1(4) AND NOT N_PZ_396)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND NOT CH1(0) AND NOT CH1(1)));
 </td></tr><tr><td>
 </td></tr><tr><td>
-N_PZ_351 <= ((NOT flag AND times2(3) AND NOT times2(4) AND NOT N_PZ_397)
+N_PZ_351 <= ((NOT flag AND times2(3) AND NOT times2(4) AND NOT N_PZ_398)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND NOT times2(3) AND times2(4) AND NOT times2(2))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times2(3) AND NOT times2(0) AND N_PZ_397 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times2(3) AND NOT times2(0) AND N_PZ_398 AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH2(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times2(3) AND NOT times2(0) AND times2(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND CH2(0) AND NOT CH2(1))
@@ -96,126 +102,123 @@ N_PZ_351 <= ((NOT flag AND times2(3) AND NOT times2(4) AND NOT N_PZ_397)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND NOT CH2(0) AND NOT CH2(1)));
 </td></tr><tr><td>
 </td></tr><tr><td>
-N_PZ_395 <= (chedo AND flaglight_FSM_FFd3);
+N_PZ_396 <= (chedo AND flaglight_FSM_FFd3);
 </td></tr><tr><td>
 </td></tr><tr><td>
-N_PZ_396 <= (NOT times1(1) AND NOT times1(2));
+N_PZ_397 <= (NOT times1(1) AND NOT times1(2));
 </td></tr><tr><td>
 </td></tr><tr><td>
-N_PZ_397 <= (NOT times2(1) AND NOT times2(2));
+N_PZ_398 <= (NOT times2(1) AND NOT times2(2));
 </td></tr><tr><td>
 </td></tr><tr><td>
-N_PZ_404 <= ((N_PZ_278)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times1(3) AND N_PZ_396 AND CH1(0) AND NOT CH1(1))
+N_PZ_407 <= ((N_PZ_282)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times1(3) AND N_PZ_397 AND CH1(0) AND NOT CH1(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT times1(3) AND times1(2) AND CH1(0) AND NOT CH1(1)));
 </td></tr><tr><td>
 </td></tr><tr><td>
-N_PZ_405 <= ((N_PZ_279)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times2(3) AND N_PZ_397 AND CH2(0) AND NOT CH2(1))
+N_PZ_408 <= ((N_PZ_283)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times2(3) AND N_PZ_398 AND CH2(0) AND NOT CH2(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT times2(3) AND times2(2) AND CH2(0) AND NOT CH2(1)));
 </td></tr><tr><td>
 </td></tr><tr><td>
-N_PZ_419 <= (NOT times1(3) AND NOT times1(0) AND NOT times1(4) AND N_PZ_396);
-</td></tr><tr><td>
-</td></tr><tr><td>
-N_PZ_420 <= (NOT times2(3) AND NOT times2(0) AND NOT times2(4) AND N_PZ_397);
+N_PZ_493 <= (chedo AND NOT flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2);
 </td></tr><tr><td>
 FDCPE_Seg10: FDCPE port map (Seg1(0),Seg1_D(0),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(0) <= NOT ((flag AND N_PZ_395 AND NOT Seg1(0) AND N_PZ_404));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(0) <= NOT ((flag AND N_PZ_396 AND NOT Seg1(0) AND N_PZ_407));
 </td></tr><tr><td>
 FDCPE_Seg11: FDCPE port map (Seg1(1),Seg1_D(1),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(1) <= ((NOT flag AND N_PZ_395 AND NOT times1(4))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND N_PZ_350)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND N_PZ_404 AND Seg1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times1(3) AND times1(0) AND N_PZ_396 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_404)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times1(3) AND N_PZ_396 AND NOT CH1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(1) <= ((NOT flag AND N_PZ_396 AND NOT times1(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND N_PZ_350)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND N_PZ_407 AND Seg1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND NOT times1(3) AND times1(0) AND N_PZ_397 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_407)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND NOT times1(3) AND N_PZ_397 AND NOT CH1(0) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND NOT times1(3) AND NOT times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_404 AND CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times1(3) AND times1(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(1) AND NOT N_PZ_404 AND CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times1(3) AND NOT N_PZ_396 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2) AND NOT N_PZ_404 AND NOT CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times1(0) AND times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND NOT N_PZ_404 AND NOT CH1(0) AND NOT CH1(1)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times1(3) AND NOT times1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_407 AND CH1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times1(3) AND times1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(1) AND NOT N_PZ_407 AND CH1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times1(3) AND NOT N_PZ_397 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2) AND NOT N_PZ_407 AND NOT CH1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times1(0) AND times1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND NOT N_PZ_407 AND NOT CH1(0) AND NOT CH1(1)));
 </td></tr><tr><td>
 FDCPE_Seg12: FDCPE port map (Seg1(2),Seg1_D(2),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(2) <= NOT (((flag AND N_PZ_395 AND N_PZ_404 AND NOT Seg1(2))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND NOT times1(4) AND NOT N_PZ_350)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times1(3) AND NOT times1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(2) <= NOT (((flag AND N_PZ_396 AND N_PZ_407 AND NOT Seg1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND NOT times1(4) AND NOT N_PZ_350)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times1(3) AND N_PZ_397 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_407)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times1(3) AND NOT times1(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times1(3) AND NOT times1(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(1) AND NOT N_PZ_404)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times1(3) AND times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND NOT N_PZ_404)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times1(3) AND NOT times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_404 AND NOT CH1(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND NOT times1(0) AND NOT times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_404 AND CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times1(3) AND NOT times1(0) AND N_PZ_396 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_404 AND NOT N_PZ_350)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND NOT times1(0) AND times1(2) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_404 AND NOT CH1(0) AND NOT CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND NOT N_PZ_396 AND NOT times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_404 AND NOT CH1(0) AND NOT CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times1(3) AND NOT N_PZ_396 AND NOT times1(2) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_404 AND CH1(0) AND NOT N_PZ_350)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times1(0) AND N_PZ_397 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_407)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times1(3) AND NOT times1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(1) AND NOT N_PZ_407)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times1(3) AND times1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND NOT N_PZ_407)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times1(0) AND NOT times1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_407 AND CH1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times1(3) AND times1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2) AND NOT N_PZ_407 AND CH1(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times1(0) AND times1(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_407 AND NOT CH1(0) AND NOT CH1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT N_PZ_397 AND NOT times1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_407 AND NOT CH1(0) AND NOT CH1(1))));
 </td></tr><tr><td>
 FDCPE_Seg13: FDCPE port map (Seg1(3),Seg1_D(3),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(3) <= NOT (((NOT flag AND N_PZ_395 AND NOT N_PZ_350)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times1(0) AND NOT N_PZ_404 AND NOT N_PZ_350)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND N_PZ_404 AND NOT N_PZ_350 AND NOT Seg1(3))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND times1(3) AND N_PZ_396 AND CH1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(3) <= NOT (((NOT flag AND N_PZ_396 AND NOT N_PZ_350)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND NOT times1(0) AND NOT N_PZ_407 AND NOT N_PZ_350)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND N_PZ_407 AND NOT N_PZ_350 AND NOT Seg1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND times1(3) AND N_PZ_397 AND CH1(0) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CH1(1) AND NOT Seg1(3))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times1(3) AND times1(2) AND CH1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND NOT times1(3) AND times1(2) AND CH1(0) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CH1(1) AND NOT Seg1(3))));
 </td></tr><tr><td>
 FDCPE_Seg14: FDCPE port map (Seg1(4),Seg1_D(4),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(4) <= ((NOT N_PZ_395)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(4) <= ((NOT N_PZ_396)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_350)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_404 AND Seg1(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_407 AND Seg1(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND times1(0) AND N_PZ_397 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_282)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times1(3) AND times1(0) AND times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2) AND NOT N_PZ_278)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2) AND NOT N_PZ_282)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND times1(0) AND NOT times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH1(1) AND NOT N_PZ_278)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND times1(0) AND NOT times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2) AND NOT CH1(1) AND NOT N_PZ_278)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND times1(0) AND times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND NOT CH1(0) AND NOT CH1(1) AND NOT N_PZ_278));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH1(1) AND NOT N_PZ_282)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times1(0) AND times1(1) AND times1(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CH1(0) AND NOT CH1(1) AND NOT N_PZ_282));
 </td></tr><tr><td>
 FDCPE_Seg15: FDCPE port map (Seg1(5),Seg1_D(5),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(5) <= ((NOT N_PZ_395)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_404 AND Seg1(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(5) <= ((NOT N_PZ_396)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_407 AND Seg1(5))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND times1(4) AND NOT N_PZ_350)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND NOT times1(0) AND times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH1(1) AND NOT N_PZ_278)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH1(1) AND NOT N_PZ_282)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times1(3) AND NOT times1(0) AND times1(2) AND NOT CH1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_278 AND NOT N_PZ_350)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_282 AND NOT N_PZ_350)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND NOT times1(0) AND times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2) AND NOT CH1(0) AND NOT N_PZ_278));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2) AND NOT CH1(0) AND NOT N_PZ_282));
 </td></tr><tr><td>
 FDCPE_Seg16: FDCPE port map (Seg1(6),Seg1_D(6),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(6) <= ((NOT N_PZ_395)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_404 AND Seg1(6))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times1(3) AND times1(0) AND N_PZ_396 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(6) <= ((NOT N_PZ_396)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_407 AND Seg1(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times1(3) AND times1(0) AND N_PZ_397 AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH1(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times1(3) AND times1(0) AND times1(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND NOT N_PZ_278)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND NOT N_PZ_282)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times1(3) AND NOT times1(0) AND times1(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2) AND CH1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND NOT times1(0) AND N_PZ_396 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH1(0) AND NOT N_PZ_278)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND NOT times1(0) AND N_PZ_397 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH1(0) AND NOT N_PZ_282)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND times1(0) AND NOT times1(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND NOT CH1(0) AND NOT CH1(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND NOT times1(0) AND times1(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND NOT CH1(0) AND NOT CH1(1)));
 </td></tr><tr><td>
 FDCPE_Seg17: FDCPE port map (Seg1(7),Seg1_D(7),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(7) <= ((NOT N_PZ_395)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg1_D(7) <= ((NOT N_PZ_396)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_350)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_404 AND Seg1(7))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND times1(0) AND N_PZ_396 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_407 AND Seg1(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND times1(0) AND N_PZ_397 AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CH1(0) AND NOT CH1(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times1(3) AND times1(0) AND NOT times1(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2) AND CH1(1))
@@ -223,101 +226,101 @@ FDCPE_Seg17: FDCPE port map (Seg1(7),Seg1_D(7),clk,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(2) AND CH1(0) AND NOT CH1(1)));
 </td></tr><tr><td>
 FDCPE_Seg20: FDCPE port map (Seg2(0),Seg2_D(0),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(0) <= NOT ((flag AND N_PZ_395 AND NOT Seg2(0) AND N_PZ_405));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(0) <= NOT ((flag AND N_PZ_396 AND NOT Seg2(0) AND N_PZ_408));
 </td></tr><tr><td>
 FDCPE_Seg21: FDCPE port map (Seg2(1),Seg2_D(1),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(1) <= ((NOT flag AND N_PZ_395 AND NOT times2(4))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND N_PZ_351)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND N_PZ_405 AND Seg2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times2(3) AND times2(0) AND N_PZ_397 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_405)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times2(3) AND N_PZ_397 AND NOT CH2(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(1) <= ((NOT flag AND N_PZ_396 AND NOT times2(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND N_PZ_351)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND N_PZ_408 AND Seg2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND NOT times2(3) AND times2(0) AND N_PZ_398 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_408)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND NOT times2(3) AND N_PZ_398 AND NOT CH2(0) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND NOT times2(3) AND NOT times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_405 AND CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times2(3) AND times2(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(1) AND NOT N_PZ_405 AND CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times2(3) AND NOT N_PZ_397 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2) AND NOT N_PZ_405 AND NOT CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times2(0) AND times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND NOT N_PZ_405 AND NOT CH2(0) AND NOT CH2(1)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times2(3) AND NOT times2(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_408 AND CH2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times2(3) AND times2(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(1) AND NOT N_PZ_408 AND CH2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times2(3) AND NOT N_PZ_398 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2) AND NOT N_PZ_408 AND NOT CH2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times2(3) AND times2(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(1) AND times2(2) AND NOT N_PZ_408 AND NOT CH2(1)));
 </td></tr><tr><td>
 FDCPE_Seg22: FDCPE port map (Seg2(2),Seg2_D(2),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(2) <= NOT (((flag AND N_PZ_395 AND N_PZ_405 AND NOT Seg2(2))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_395 AND NOT times2(4) AND NOT N_PZ_351)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times2(3) AND NOT times2(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(2) <= NOT (((flag AND N_PZ_396 AND N_PZ_408 AND NOT Seg2(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND N_PZ_396 AND NOT times2(4) AND NOT N_PZ_351)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times2(3) AND N_PZ_398 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_408)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times2(3) AND NOT times2(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times2(3) AND NOT times2(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(1) AND NOT N_PZ_405)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times2(3) AND times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND NOT N_PZ_405)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND times2(3) AND NOT times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_405 AND NOT CH2(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND NOT times2(0) AND NOT times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_405 AND CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times2(3) AND NOT times2(0) AND N_PZ_397 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_405 AND NOT N_PZ_351)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND NOT times2(0) AND times2(2) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_405 AND NOT CH2(0) AND NOT CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_395 AND NOT N_PZ_397 AND NOT times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_405 AND NOT CH2(0) AND NOT CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times2(3) AND NOT N_PZ_397 AND NOT times2(2) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_405 AND CH2(0) AND NOT N_PZ_351)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times2(0) AND N_PZ_398 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_408)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times2(3) AND NOT times2(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2) AND NOT N_PZ_408)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND times2(3) AND times2(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND NOT N_PZ_408)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times2(0) AND NOT times2(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_408 AND CH2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times2(3) AND times2(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2) AND NOT N_PZ_408 AND CH2(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT times2(0) AND times2(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_408 AND NOT CH2(0) AND NOT CH2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_396 AND NOT N_PZ_398 AND NOT times2(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_408 AND NOT CH2(0) AND NOT CH2(1))));
 </td></tr><tr><td>
 FDCPE_Seg23: FDCPE port map (Seg2(3),Seg2_D(3),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(3) <= NOT (((NOT flag AND N_PZ_395 AND NOT N_PZ_351)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times2(0) AND NOT N_PZ_405 AND NOT N_PZ_351)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND N_PZ_405 AND NOT N_PZ_351 AND NOT Seg2(3))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND times2(3) AND N_PZ_397 AND CH2(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(3) <= NOT (((NOT flag AND N_PZ_396 AND NOT N_PZ_351)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND NOT times2(0) AND NOT N_PZ_408 AND NOT N_PZ_351)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND N_PZ_408 AND NOT N_PZ_351 AND NOT Seg2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND times2(3) AND N_PZ_398 AND CH2(0) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CH2(1) AND NOT Seg2(3))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_395 AND NOT times2(3) AND times2(2) AND CH2(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_396 AND NOT times2(3) AND times2(2) AND CH2(0) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CH2(1) AND NOT Seg2(3))));
 </td></tr><tr><td>
 FDCPE_Seg24: FDCPE port map (Seg2(4),Seg2_D(4),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(4) <= ((NOT N_PZ_395)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(4) <= ((NOT N_PZ_396)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_351)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_405 AND Seg2(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_408 AND Seg2(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND times2(0) AND N_PZ_398 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_283)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times2(3) AND times2(0) AND times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2) AND NOT N_PZ_279)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2) AND NOT N_PZ_283)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND times2(0) AND NOT times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH2(1) AND NOT N_PZ_279)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND times2(0) AND NOT times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2) AND NOT CH2(1) AND NOT N_PZ_279)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND times2(0) AND times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND NOT CH2(0) AND NOT CH2(1) AND NOT N_PZ_279));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH2(1) AND NOT N_PZ_283)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times2(0) AND times2(1) AND times2(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CH2(0) AND NOT CH2(1) AND NOT N_PZ_283));
 </td></tr><tr><td>
 FDCPE_Seg25: FDCPE port map (Seg2(5),Seg2_D(5),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(5) <= ((NOT N_PZ_395)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_405 AND Seg2(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(5) <= ((NOT N_PZ_396)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_408 AND Seg2(5))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flag AND times2(4) AND NOT N_PZ_351)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND NOT times2(0) AND times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH2(1) AND NOT N_PZ_279)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH2(1) AND NOT N_PZ_283)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (times2(3) AND NOT times2(0) AND times2(2) AND NOT CH2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_279 AND NOT N_PZ_351)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_283 AND NOT N_PZ_351)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND NOT times2(0) AND times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2) AND NOT CH2(0) AND NOT N_PZ_279));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2) AND NOT CH2(0) AND NOT N_PZ_283));
 </td></tr><tr><td>
 FDCPE_Seg26: FDCPE port map (Seg2(6),Seg2_D(6),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(6) <= ((NOT N_PZ_395)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_405 AND Seg2(6))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times2(3) AND times2(0) AND N_PZ_397 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(6) <= ((NOT N_PZ_396)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_408 AND Seg2(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times2(3) AND times2(0) AND N_PZ_398 AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH2(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times2(3) AND times2(0) AND times2(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND NOT N_PZ_279)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND NOT N_PZ_283)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND times2(3) AND NOT times2(0) AND times2(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(2) AND CH2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND NOT times2(0) AND N_PZ_397 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH2(0) AND NOT N_PZ_279)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND NOT times2(0) AND N_PZ_398 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	CH2(0) AND NOT N_PZ_283)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND times2(0) AND NOT times2(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND NOT CH2(0) AND NOT CH2(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND NOT times2(0) AND times2(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND NOT CH2(0) AND NOT CH2(1)));
 </td></tr><tr><td>
 FDCPE_Seg27: FDCPE port map (Seg2(7),Seg2_D(7),clk,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(7) <= ((NOT N_PZ_395)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seg2_D(7) <= ((NOT N_PZ_396)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_351)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_405 AND Seg2(7))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND times2(0) AND N_PZ_397 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND N_PZ_408 AND Seg2(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND times2(0) AND N_PZ_398 AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT CH2(0) AND NOT CH2(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flag AND NOT times2(3) AND times2(0) AND NOT times2(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2) AND CH2(1))
@@ -464,37 +467,47 @@ FTCPE_U1/counter19: FTCPE port map (U1/counter(19),U1/counter_T(19),clk,'0','0',
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U1/counter(8) AND U1/counter(13) AND U1/counter(9) AND U1/counter(14) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U1/counter(15) AND U1/counter(16) AND U1/counter(17) AND U1/counter(18));
 </td></tr><tr><td>
-FDCPE_V1: FDCPE port map (V1,V1_D,clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V1_D <= ((NOT chedo AND den AND X1 AND NOT old_tmp_1_add0000(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND NOT old_tmp_1_add0000(1) AND V1)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND X1 AND NOT flaglight_FSM_FFd1 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT flaglight_FSM_FFd2 AND N_PZ_419)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND V1 AND NOT flaglight_FSM_FFd1 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT flaglight_FSM_FFd2 AND NOT N_PZ_419));
+FTCPE_V1: FTCPE port map (V1,V1_T,clk1hz,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V1_T <= ((chedo AND V1 AND NOT N_PZ_493)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND V1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (V1 AND tmp(1) AND NOT N_PZ_493)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND X1 AND NOT V1 AND NOT tmp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X1 AND V1 AND NOT times1(3) AND NOT times1(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(0) AND N_PZ_397)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (X1 AND NOT V1 AND N_PZ_493 AND NOT times1(3) AND NOT times1(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(0) AND N_PZ_397));
 </td></tr><tr><td>
-FDCPE_V2: FDCPE port map (V2,V2_D,clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V2_D <= ((NOT chedo AND NOT den AND NOT old_tmp_1_add0000(1) AND X2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND NOT old_tmp_1_add0000(1) AND V2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND X2 AND NOT flaglight_FSM_FFd1 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT flaglight_FSM_FFd2 AND N_PZ_420)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND V2 AND NOT flaglight_FSM_FFd1 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT flaglight_FSM_FFd2 AND NOT N_PZ_420));
+FTCPE_V2: FTCPE port map (V2,V2_T,clk1hz,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V2_T <= ((chedo AND V2 AND NOT N_PZ_493)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND V2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (tmp(1) AND V2 AND NOT N_PZ_493)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND X2 AND NOT tmp(1) AND NOT V2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X2 AND V2 AND NOT times2(3) AND times2(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(4) AND N_PZ_398)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (X2 AND NOT V2 AND NOT times2(3) AND times2(0) AND NOT times2(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_398 AND N_PZ_493));
 </td></tr><tr><td>
 FDCPE_X1: FDCPE port map (X1,X1_D,clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X1_D <= ((chedo AND flaglight_FSM_FFd2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND old_tmp_1_add0000(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND X1 AND NOT flaglight_FSM_FFd1 AND NOT N_PZ_419)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X1_D <= (chedo AND X1 AND NOT flaglight_FSM_FFd1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((chedo AND NOT X1 AND flaglight_FSM_FFd2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND flaglight_FSM_FFd1 AND flaglight_FSM_FFd2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND tmp(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND NOT X2 AND NOT V2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X1 AND NOT V1 AND NOT flaglight_FSM_FFd1 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_419));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND X1 AND NOT flaglight_FSM_FFd1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT flaglight_FSM_FFd2 AND NOT times1(3) AND NOT times1(4) AND times1(0) AND N_PZ_397)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X1 AND NOT flaglight_FSM_FFd1 AND NOT V1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(3) AND NOT times1(4) AND times1(0) AND N_PZ_397));
 </td></tr><tr><td>
 FDCPE_X2: FDCPE port map (X2,X2_D,clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X2_D <= ((chedo AND flaglight_FSM_FFd1)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND old_tmp_1_add0000(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND X2 AND NOT flaglight_FSM_FFd2 AND NOT N_PZ_420)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X2_D <= (chedo AND X2 AND NOT flaglight_FSM_FFd2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((chedo AND flaglight_FSM_FFd1 AND NOT X2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND flaglight_FSM_FFd1 AND flaglight_FSM_FFd2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND tmp(1))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND den AND NOT X1 AND NOT V1)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X2 AND NOT V2 AND NOT flaglight_FSM_FFd2 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_420));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND X2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT flaglight_FSM_FFd2 AND NOT times2(3) AND times2(0) AND NOT times2(4) AND N_PZ_398)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X2 AND NOT flaglight_FSM_FFd2 AND NOT V2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(3) AND times2(0) AND NOT times2(4) AND N_PZ_398));
 </td></tr><tr><td>
 FTCPE_clk1hz: FTCPE port map (clk1hz,clk1hz_T,clk,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clk1hz_T <= (NOT U1/counter(0) AND NOT U1/counter(10) AND NOT U1/counter(1) AND 
@@ -504,7 +517,7 @@ FTCPE_clk1hz: FTCPE port map (clk1hz,clk1hz_T,clk,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	U1/counter(15) AND NOT U1/counter(16) AND NOT U1/counter(17) AND NOT U1/counter(18) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT U1/counter(19));
 </td></tr><tr><td>
-FTCPE_flag: FTCPE port map (flag,N_PZ_395,clk,'0','0','1');
+FTCPE_flag: FTCPE port map (flag,N_PZ_396,clk,'0','0','1');
 </td></tr><tr><td>
 FDCPE_flaglight_FSM_FFd1: FDCPE port map (flaglight_FSM_FFd1,flaglight_FSM_FFd1_D,clk1hz,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flaglight_FSM_FFd1_D <= (NOT chedo AND den);
@@ -514,106 +527,114 @@ FDCPE_flaglight_FSM_FFd2: FDCPE port map (flaglight_FSM_FFd2,flaglight_FSM_FFd2_
 </td></tr><tr><td>
 FDCPE_flaglight_FSM_FFd3: FDCPE port map (flaglight_FSM_FFd3,chedo,clk1hz,'0','0','1');
 </td></tr><tr><td>
-FTCPE_old_tmp_1_add00001: FTCPE port map (old_tmp_1_add0000(1),old_tmp_1_add0000_T(1),clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;old_tmp_1_add0000_T(1) <= NOT (((chedo AND NOT old_tmp_1_add0000(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (den AND NOT X1 AND NOT old_tmp_1_add0000(1) AND NOT V1)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT den AND NOT old_tmp_1_add0000(1) AND NOT X2 AND NOT V2)));
-</td></tr><tr><td>
 FDCPE_times10: FDCPE port map (times1(0),times1_D(0),clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times1_D(0) <= NOT (((NOT chedo)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND flaglight_FSM_FFd2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND times1(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (X1 AND NOT flaglight_FSM_FFd1 AND NOT times1(3) AND NOT times1(4) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_396)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT V1 AND NOT flaglight_FSM_FFd1 AND NOT times1(3) AND NOT times1(4) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_396)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times1_D(0) <= ((chedo AND flaglight_FSM_FFd1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND NOT times1(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND X1 AND NOT flaglight_FSM_FFd2 AND NOT times1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(4) AND times1(0) AND N_PZ_397)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND V1 AND NOT times1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(4) AND times1(0) AND N_PZ_397));
 </td></tr><tr><td>
 FDCPE_times11: FDCPE port map (times1(1),times1_D(1),clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times1_D(1) <= NOT (((NOT chedo)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd2 AND times1(0) AND NOT times1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd2 AND NOT times1(0) AND times1(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT X1 AND V1 AND NOT flaglight_FSM_FFd2 AND NOT times1(3) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(4) AND N_PZ_396)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times1_D(1) <= ((chedo AND flaglight_FSM_FFd2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND times1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND NOT times1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND X1 AND NOT flaglight_FSM_FFd1 AND NOT times1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(4) AND times1(0) AND N_PZ_397)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND NOT V1 AND NOT times1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(4) AND times1(0) AND N_PZ_397));
 </td></tr><tr><td>
 FDCPE_times12: FDCPE port map (times1(2),times1_D(2),clk1hz,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times1_D(2) <= ((chedo AND flaglight_FSM_FFd2)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND times1(0) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND NOT times1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_397)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND times1(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(2))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X1 AND NOT V1 AND NOT flaglight_FSM_FFd1 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_419)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND NOT N_PZ_419 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(0) AND N_PZ_396));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X1 AND NOT flaglight_FSM_FFd1 AND NOT V1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(3) AND NOT times1(4) AND times1(0) AND N_PZ_397));
 </td></tr><tr><td>
-FDCPE_times13: FDCPE port map (times1(3),times1_D(3),clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times1_D(3) <= ((chedo AND flaglight_FSM_FFd1)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND times1(3) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND times1(3) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_396)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X1 AND V1 AND NOT flaglight_FSM_FFd2 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_419)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND NOT times1(3) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(0) AND times1(4) AND N_PZ_396));
+FTCPE_times13: FTCPE port map (times1(3),times1_T(3),clk1hz,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times1_T(3) <= ((NOT chedo AND times1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND flaglight_FSM_FFd1 AND NOT times1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND flaglight_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_493 AND NOT times1(0) AND N_PZ_397)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X1 AND NOT flaglight_FSM_FFd2 AND V1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(3) AND NOT times1(4) AND N_PZ_397));
 </td></tr><tr><td>
 FDCPE_times14: FDCPE port map (times1(4),times1_D(4),clk1hz,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times1_D(4) <= NOT (((NOT chedo)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times1(3) AND NOT times1(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(4) AND NOT N_PZ_397)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (X1 AND NOT flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_419)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(4) AND times1(0))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_419 AND NOT times1(4))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_419 AND NOT times1(3) AND NOT times1(0) AND N_PZ_396)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times1(3) AND times1(4) AND NOT times1(0) AND N_PZ_397)));
 </td></tr><tr><td>
 FDCPE_times20: FDCPE port map (times2(0),times2_D(0),clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times2_D(0) <= NOT (((NOT chedo)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd2 AND times2(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (X2 AND NOT flaglight_FSM_FFd2 AND NOT times2(3) AND NOT times2(4) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_397)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT V2 AND NOT flaglight_FSM_FFd2 AND NOT times2(3) AND NOT times2(4) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_397)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times2_D(0) <= ((chedo AND flaglight_FSM_FFd2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND NOT times2(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND X2 AND NOT times2(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(0) AND NOT times2(4) AND N_PZ_398)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND V2 AND NOT times2(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(0) AND NOT times2(4) AND N_PZ_398));
 </td></tr><tr><td>
 FDCPE_times21: FDCPE port map (times2(1),times2_D(1),clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times2_D(1) <= NOT (((NOT chedo)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND flaglight_FSM_FFd2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND times2(0) AND NOT times2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND NOT times2(0) AND times2(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT X2 AND V2 AND NOT flaglight_FSM_FFd1 AND NOT times2(3) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(4) AND N_PZ_397)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times2_D(1) <= ((chedo AND flaglight_FSM_FFd1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND times2(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND NOT times2(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND X2 AND NOT flaglight_FSM_FFd2 AND NOT times2(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(0) AND NOT times2(4) AND N_PZ_398)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND NOT V2 AND NOT times2(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(0) AND NOT times2(4) AND N_PZ_398));
 </td></tr><tr><td>
 FDCPE_times22: FDCPE port map (times2(2),times2_D(2),clk1hz,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times2_D(2) <= ((chedo AND flaglight_FSM_FFd1)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND times2(0) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND NOT times2(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_398)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND times2(1) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(2))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X2 AND NOT V2 AND NOT flaglight_FSM_FFd2 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_420)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd2 AND NOT N_PZ_420 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(0) AND N_PZ_397));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X2 AND NOT flaglight_FSM_FFd2 AND NOT V2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(3) AND times2(0) AND NOT times2(4) AND N_PZ_398));
 </td></tr><tr><td>
-FDCPE_times23: FDCPE port map (times2(3),times2_D(3),clk1hz,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times2_D(3) <= ((chedo AND flaglight_FSM_FFd2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND times2(3) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND times2(3) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_397)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT X2 AND V2 AND NOT flaglight_FSM_FFd1 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_420)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (chedo AND NOT flaglight_FSM_FFd1 AND NOT times2(3) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(0) AND times2(4) AND N_PZ_397));
+FTCPE_times23: FTCPE port map (times2(3),times2_T(3),clk1hz,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times2_T(3) <= ((chedo AND flaglight_FSM_FFd2 AND NOT times2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND times2(3) AND NOT N_PZ_493)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd2 AND times2(3) AND NOT N_PZ_493)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT times2(0) AND N_PZ_398 AND N_PZ_493)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT X2 AND V2 AND NOT times2(3) AND NOT times2(4) AND N_PZ_398 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_493));
 </td></tr><tr><td>
 FDCPE_times24: FDCPE port map (times2(4),times2_D(4),clk1hz,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times2_D(4) <= NOT (((NOT chedo)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (X2 AND NOT flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_420)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_420 AND NOT times2(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(3) AND NOT times2(4))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_420 AND NOT times2(3) AND NOT times2(0) AND N_PZ_397)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(4) AND NOT N_PZ_398)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND X2 AND NOT flaglight_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	times2(0) AND NOT times2(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT flaglight_FSM_FFd1 AND NOT flaglight_FSM_FFd2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT times2(3) AND NOT times2(0) AND times2(4) AND N_PZ_398)));
+</td></tr><tr><td>
+FDCPE_tmp0: FDCPE port map (tmp(0),tmp_D(0),clk1hz,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmp_D(0) <= (NOT chedo AND NOT tmp(1) AND NOT tmp(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT chedo AND den AND NOT X1 AND NOT V1 AND NOT tmp(1) AND NOT tmp(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND NOT X2 AND NOT tmp(1) AND NOT tmp(0) AND NOT V2));
+</td></tr><tr><td>
+FDCPE_tmp1: FDCPE port map (tmp(1),tmp_D(1),clk1hz,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmp_D(1) <= (NOT chedo AND NOT tmp(1) AND tmp(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT chedo AND den AND NOT X1 AND NOT V1 AND NOT tmp(1) AND tmp(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT chedo AND NOT den AND NOT X2 AND NOT tmp(1) AND tmp(0) AND NOT V2));
 </td></tr><tr><td>
 </td></tr><tr><td>
 Register Legend:
